@@ -26,7 +26,7 @@ public class Code{
                 System.out.println("You are out of guess!");
             }
             else{
-                System.out.println("You win and got " + points + " points :)");   
+                JOptionPane.showMessageDialog(null, "You win and got " + points + " points :)");
             }
             
     }
