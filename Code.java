@@ -8,6 +8,7 @@ public class Code{
             String guessWord = "";
             int guessCount  = 0;
             int guessLimit = 3;
+            int points = 10;
             boolean outofGuess = false;
 
             while (!myWord.equals(guessWord) && !outofGuess){
@@ -25,7 +26,7 @@ public class Code{
                 System.out.println("You are out of guess!");
             }
             else{
-                System.out.println("You win");   
+                System.out.println("You win and got " + points + " points :)");   
             }
             
     }
