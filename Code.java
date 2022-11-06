@@ -1,34 +1,36 @@
-import java.util.*;
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 public class Code{
     public static void main(String[] args) {
-        try (Scanner keyboardInput = new Scanner(System.in)){
-            System.out.println("The java program \t Guessing game");
-            String myWord = "supolaris";
+        try(Scanner keyboardInput = new Scanner(System.in)){
+            String myWord = "Star";
             String guessWord = "";
-            int guessCount  = 0;
             int guessLimit = 3;
-            int points = 10;
+            int guessCount = 0;
             boolean outofGuess = false;
 
-            while (!myWord.equals(guessWord) && !outofGuess){
-                if (guessCount < guessLimit){
-                    System.out.print("Enter the guess Word: ");
+
+            while (!guessWord.equals(myWord) && !outofGuess){
+                if(guessCount < guessLimit){
+                    System.out.print("Enter word: ");
                     guessWord = keyboardInput.nextLine();
-                    guessCount++ ;
+                    guessCount ++ ;
                 }
                 else{
-                    outofGuess = true;   
-                }  
-
+                    outofGuess = true;
+                }
             }
-            if (outofGuess){
-                System.out.println("You are out of guess!");
+            if(outofGuess){
+                System.out.print("You are out of guess");
             }
             else{
-                JOptionPane.showMessageDialog(null, "You win and got " + points + " points :)");
+                System.out.print("You win");
             }
+
+
             
+            
+
+
+        }
     }
-}
 }
