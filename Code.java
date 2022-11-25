@@ -1,12 +1,16 @@
 import java.util.*;
 import javax.swing.JOptionPane;
 
+
+
+//class
 class Student {
     String sName;
     int sId;
     String sDepartment;
     double scgpa;
 
+    //constructor
     public Student(String ssName, int ssId, String ssDepartment, double sscgpa){
         this.sName = ssName;
         this.sId =  ssId;
@@ -14,6 +18,7 @@ class Student {
         this.scgpa = sscgpa;
     }
 
+    //instance
     public boolean isHonorable () {
         if (this.scgpa > 3.5){
             return true;
