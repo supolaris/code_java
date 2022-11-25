@@ -5,7 +5,7 @@ import java.util.Scanner;
         private String sName;
         private int sRoll;
         private Double sGpa;
-       private String sDepartment;
+        private String sDepartment;
     
     //constructor
     public Student(String ssName, int ssRoll, Double ssGpa, String ssDepartment){
