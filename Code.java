@@ -5,7 +5,7 @@ import java.util.Scanner;
         String sName;
         int sRoll;
         Double sGpa;
-        private String sDepartment;
+        String sDepartment;
     
     //constructor
     public Student(String ssName, int ssRoll, Double ssGpa, String ssDepartment){
@@ -25,6 +25,7 @@ import java.util.Scanner;
         }
     }
 
+    //setter
     public void setsDepartment(String setterDepart){
         if (setterDepart.equals("UIIT") || setterDepart.equals("Business")){
             this.sDepartment = setterDepart;
@@ -40,10 +41,14 @@ public class Code{
     public static void main(String[] args) {
         try (Scanner keyboardInput = new Scanner(System.in)){
             System.out.println("Code of Setters & Getters");
+            
             Student student1 = new Student("Suleman", 627, 3.4, "Uiit");
             Student student2 = new Student("James", 007, 3.0, "Business");
 
-            student1.setsDepartment("aaa");
+
+            student1.setsDepartment("null");
+
+            
 
             System.out.println("INFORMATION OF STUDENT");
             System.out.println("==========================");
